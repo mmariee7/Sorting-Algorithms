@@ -1,0 +1,156 @@
+<html>
+<head>
+    <title>Sorting Algorithms In Python</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section id="banner">
+    <img src="images/logo.png" class="logo">
+    <ul> 
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Bubble Sort</a></li>
+        <li><a href="#">Selection Sort</a></li>
+        <li><a href="#">Insertion Sort</a></li>
+        <li><a href="#">Merge Sort</a></li>
+        <li><a href="#">Heap Sort</a></li>
+        <li><a href="#">Quick Sort</a></li>
+        <li><a href="#">Conclusion</a></li>
+    </ul>
+    <div class="banner-text">
+        <h1>Introduction</h1>
+        <p>
+            A Sorting Algorithm is used to rearrange a given array or list elements according to a comparison operator on the elements. 
+            The comparison operator is used to decide the new order of element in the respective data structure.
+            In python, this is carried out using various sorting algorithms, like the:   
+            <ol>
+                <li>Bubble Sort</li>
+                <li>Selection Sort</li>
+                <li>Insertion Sort</li>
+                <li>Merge Sort</li>
+                <li>Heap Sort</li>
+                <li>Quick Sort</li>
+                The different sorting algorithms are a perfect showcase of how algorithm design can
+            have such a strong effect on program complexity, speed, and efficiency. Let sort
+            algorithms and see how we can implement them in Python! 
+            </ol> 
+        </p> 
+    </div>  
+</section> 
+<!--Bubble Sort-->   
+<section id="bubblesort">
+<div class="title-text">
+<h1>Bubble Sort</h1>
+<p> 
+    Bubble Sort is a sorting algorithm used to sort list items in ascending order by comparing two values. If the first value is higher than second value, the first value takes the second value position, while second value takes the first value position. If the first value is lower than the second value, then no swapping is done.
+    This process is repeated until all the values in a list have been compared and swapped if necessary. Each iteration is usually called a pass. The number of passes in a bubble sort is equal to the number of elements in a list minus one.
+</p>
+<h2>Implementation</h2>
+<img src="images/bubblesort.png" width="460" height="345">  <img src="images/qrcodebubble.png" width="150" height="150">
+<p>Output = 3[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</p>
+<h3>Time Complexity</h3>
+<p>
+     this algorithm would have to swap every single item of the array. Our swapped flag would be set to True on every iteration.
+    Therefore, if we have n elements in our list, we would have n iterations per item - thus Bubble Sort's time complexity is O(n^2).
+</p>
+</div>
+</section>
+<!--Selection Sort-->   
+<section id="selectionsort">
+<div class="title-text2">''
+<h1>Selection Sort</h1>
+<p> 
+    Selection sort is a comparison sorting algorithm that is used to sort a random list of items in ascending order. The comparison does not require a lot of extra space. It only requires one extra memory space for the temporal variable.The time complexity measures the number of iterations required to sort the list. 
+    The list is divided into two partitions: The first list contains sorted items, while the second list contains unsorted items.
+    By default, the sorted list is empty, and the unsorted list contains all the elements. The unsorted list is then scanned for the minimum value, which is then placed in the sorted list. This process is repeated until all the values have been compared and sorted.
+</p>
+<h2>Implementation</h2>
+<img src="images/selectionsort.png" width="460" height="345"> <img src="images/qrcodeselection.png" width="150" height="150">
+<p>Output = [1, 2, 3, 4, 5, 6]</p>
+<h3>Time Complexity</h3>
+<p>
+    We can easily get the time complexity by examining the for loops in the Selection Sort algorithm. For a list with n elements, the outer loop iterates n times.
+    The amount of comparisons are (n - 1) + (n - 2) + ... + 1, which gives Selection Sort a time complexity of O(n^2).
+</p>
+</div>
+</section>
+<!--Insertion Sort-->   
+<section id="insertionsort">
+<div class="title-text3">
+<h1>Insertion Sort</h1>
+<p> 
+    Insertion sort is both faster and well-arguably more simplistic than both bubble sort and selection sort. Funny enough, it’s how many people sort their cards when playing a card game! On each loop iteration, insertion sort removes one element from the array. It then finds the location where that element belongs within another sorted array and inserts it there. It repeats this process until no input elements remain.
+</p>
+<h2>Implementation</h2>
+<img src="images/insertionsort.png" width="460" height="345"> <img src="images/qrcodeinsertion.png" width="150" height="150">
+<p>Output = [1, 2, 3, 4, 5, 6, 7, 8]</p>
+<h3>Time Complexity</h3>
+<p>
+    The inner for loop would swap once, then swap two and so forth. The amount of swaps would then be 1 + 2 + ... + (n - 3) + (n - 2) + (n - 1) which gives Insertion Sort a time complexity of O(n^2).
+</p>
+</div>
+</section>
+<!--Merge Sort-->   
+<section id="mergesort">
+<div class="title-text4">
+<h1>Merge Sort</h1>
+<p> 
+    Merge sort works by splitting the input list into two halves, repeating the process on those halves, and finally merging the two sorted halves together.
+</p>    
+<h2>Implementation</h2>
+<img src="images/mergesort.png" width="460" height="345"> <img src="images/qrcodemerge.png" width="150" height="150">
+<p>Output = [0, 1, 2, 2, 3, 4, 4, 5, 6, 7,]</p>
+<h3>Time Complexity</h3>
+<p>
+    The merge sort function splits its given array in 2, and recursively sorts the sub-arrays. As the input being recursed is half of what was given, like binary trees this makes the time it takes to process grow logarithmically to n. 
+    Therefore the overall time complexity of the Merge Sort algorithm is O(nlog(n)).
+
+
+</p>
+</div>
+</section>
+<!--Heap Sort-->   
+<section id="heapsort">
+<div class="title-text5">
+<h1>Heap Sort</h1>
+<p> 
+    Heap sort is a form of selection sorting technique. It involves separating the given input as sorted and non-sorted elements. Then the algorithm loops in such a manner on the non sorted region so that on each loop, the largest value will be pushed into the sorted region. This process will be continued across all the elements in the unsorted region.
+    A max heap is created from the given input list. The last value is then swapped with the first value repeatedly, and also, the value range is comparatively decreased by one. This process takes place until the range shrinks to 1.
+</p>
+<h2>Implementation</h2>
+<img src="images/heapsort.png" width="460" height="345">
+<p>Output = [1, 2, 3, 4, 5, 6, 7, 8]</p>
+<h3>Time Complexity</h3>
+<p>
+    The heapify function traverses that tree in O(log(n)) time.
+    The heap sort function iterates over the array n times. Therefore the overall time complexity of the Heap Sort algorithm is O(nlog(n)).
+</p>
+</div>
+</section>
+<!--Quick Sort-->   
+<section id="quicksort">
+<div class="title-text6">
+<h1>Quick Sort</h1>
+<p> 
+    Quick Sort begins by partitioning the list - picking one value of the list that will be in its sorted place. This value is called a pivot. All elements smaller than the pivot are moved to its left. All larger elements are moved to its right.
+    Knowing that the pivot is in it's rightful place, we recursively sort the values around the pivot until the entire list is sorted.
+</p>
+<h2>Implementation</h2>
+<img src="images/quicksort.png" width="460" height="345"> <img src="images/qrcodequick.png" width="150" height="150">
+<p>Output = [11, 22, 33, 44, 55, 66, 77, 88]</p>
+<h3>Time Complexity</h3>
+<p>
+    The Quick Sort function would partition the array into halves which grows logarithmically with n. Therefore the average time complexity of the Quick Sort algorithm is O(nlog(n)).
+</p>
+</div>
+</section>
+<!--Conclusion-->   
+<section id="conclusion">
+<div class="title-text7">
+<h1>Conclusion</h1>
+<p> 
+    Over a period of time, there were numerous algorithms designed for sorting the input set. They were designed with the motto of achieving better technique and optimized execution in the sorting process. Some of the most key ones are discussed above. From a python perspective, this language stands out to be a very flexible and steady language for getting these algorithms designed.
+</p>
+</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+ul{
+    float:right;
+    list-style: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding:  5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+#banner{
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 300px;
+    position: absolute;
+    margin-top: 25px;
+    left: 2%;
+}
+.banner-text{
+    text-align: left;
+    color: #fff;
+    padding: 200px 25px;
+}
+.banner-text h1{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: left;
+}
+.banner-text ol{
+    font-size: 20px;
+    font-style: oblique;
+}
+/*--bubble sort--*/
+#bubblesort{
+    width: 100%;
+    padding: 20px 0;
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    color: #000;
+}
+.title-text{
+    text-align: left;
+    padding-bottom: 70px;
+}
+.title-text h1{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text p{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: left;
+}
+.title-text h2{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text h3{
+    font-size: 20px;
+    text-align: left;
+    padding: 25px 0px;
+}
+/*---selection sort---*/
+#selectionsort{
+    width: 100%;
+    padding: 20px 0;
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    color: #fff;
+}
+.title-text2{
+    text-align: left;
+    padding-bottom: 70px;
+}
+.title-text2 h1{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text2 p{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: left;
+}
+.title-text2 h2{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text2 h3{
+    font-size: 20px;
+    text-align: left;
+    padding: 25px 0px;
+}
+/*---insertion sort---*/
+#insertionsort{
+    width: 100%;
+    padding: 20px 0;
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    color: #000;
+}
+.title-text3{
+    text-align: left;
+    padding-bottom: 70px;
+}
+.title-text3 h1{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text3 p{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: left;
+}
+.title-text3 h2{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text3 h3{
+    font-size: 20px;
+    text-align: left;
+    padding: 25px 0px;
+}
+/*---merge sort---*/
+#mergesort{
+    width: 100%;
+    padding: 20px 0;
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    color: #fff;
+}
+.title-text4{
+    text-align: left;
+    padding-bottom: 70px;
+}
+.title-text4 h1{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text4 p{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: left;
+}
+.title-text4 h2{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text4 h3{
+    font-size: 20px;
+    text-align: left;
+    padding: 25px 0px;
+}
+/*---heap sort---*/
+#heapsort{
+    width: 100%;
+    padding: 20px 0;
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    color: #000;
+}
+.title-text5{
+    text-align: left;
+    padding-bottom: 70px;
+}
+.title-text5 h1{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text5 p{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: left;
+}
+.title-text5 h2{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text5 h3{
+    font-size: 20px;
+    text-align: left;
+    padding: 25px 0px;
+}
+/*---quick sort---*/
+#quicksort{
+    width: 100%;
+    padding: 20px 0;
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    color: #fff;
+}
+.title-text6{
+    text-align: left;
+    padding-bottom: 70px;
+}
+.title-text6 h1{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text6 p{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: left;
+}
+.title-text6 h2{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text6 h3{
+    font-size: 20px;
+    text-align: left;
+    padding: 25px 0px;
+}
+/*---conclusion---*/
+#conclusion{
+    width: 100%;
+    padding: 20px 0;
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    color: #000;
+}
+.title-text7{
+    text-align: left;
+    padding-bottom: 70px;
+}
+.title-text7 h1{
+    font-size: 40px;
+    text-align: left;
+    padding: 25px 0px;
+}
+.title-text7 p{
+    font-size: 20px;
+    font-style: oblique;
+    text-align: left;
+}
